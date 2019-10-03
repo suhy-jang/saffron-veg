@@ -1,4 +1,4 @@
-# Saffron Paradise
+# Saffron Dhaba
 This is a project for building a Restaurant Page using classes and modules. This is part of the [Odin Project's Javascript Curriculum](https://www.theodinproject.com/courses/javascript/lessons/restaurant-page).
 
 ## Function Description
