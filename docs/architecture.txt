@@ -1,0 +1,8 @@
+navtap
+about, menu, contact
+about us: explanation
+our menu: flex, grouping, not many scrolling
+contact us: name, email, message, send button
+
+styling: mostly in css
+locating objects: in js
