@@ -1,0 +1,54 @@
+
+#menu {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Acme', sans-serif;
+}
+
+#menu > div {
+  background-color: #ffffff99;
+  /* background: linear-gradient(0deg,#ffffff99 0%, #ffffffff 100%); */
+}
+
+#menu .h-title,
+.food-items .food-item {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.food-items .food-item {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.food-items {
+  margin: 2rem 0;
+}
+
+.food-item img {
+  max-width: 100%;
+}
+
+.menu-description {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.hot-drink-menu {
+  width: 650px;
+}
+
+@media (min-width: 1555px) {
+  .hot-drink-menu .menu-description {
+    min-height: 66px;
+  }
+}
+
+.cold-drink-menu {
+  width: 750px;
+}
+
+.cold-drink-menu .menu-description {
+  max-width: 140px;
+}
