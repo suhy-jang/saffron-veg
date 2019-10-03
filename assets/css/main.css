@@ -1,7 +1,37 @@
 body {
-  background: url('./../images/main_bg.webp') top/cover repeat-x;
+  background: url('./../images/main_bg.webp') center/cover repeat-x;
   font-family: 'Roboto-condensed', sans-serif;
   line-height: 1.2;
+  max-width: 1900px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.copyright {
+  background-color: rgb(200, 200, 200);
+  margin-top: 3rem;
+  padding: 1rem;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.list-style-none {
+  padding: 0;
+  list-style: none;
+}
+
+.text-align-center {
+  text-align: center;
 }
 
 .restaurant-name {
@@ -72,27 +102,16 @@ ul.nav-tap li:last-child {
   }
 }
 
+#about,
+#contact,
+#menu > div {
+  width: 90%;
+  margin: 1rem auto;
+  padding: 1rem;
+  box-sizing: border-box;
+  background-color: #ffffffb9;
+}
+
 .h-title {
   width: 100%;
-}
-.copyright {
-  background-color: rgb(200, 200, 200);
-  padding: 1rem;
-}
-
-.d-flex {
-  display: flex;
-}
-
-.flex-row {
-  flex-direction: row;
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
-}
-
-.list-style-none {
-  padding: 0;
-  list-style: none;
 }
