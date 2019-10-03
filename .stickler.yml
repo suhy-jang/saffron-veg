@@ -1,0 +1,10 @@
+linters:
+  flake8:
+  eslint:
+    config: './eslint.config'
+  csslint:
+    ignore: 'order-alphabetical,box-model'
+  stylelint:
+files:
+  ignore:
+    - 'dist/main.js'
