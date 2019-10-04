@@ -7,6 +7,10 @@ body {
   margin: 0 auto;
 }
 
+.white-space-pre {
+  white-space: pre;
+}
+
 .copyright {
   background-color: rgb(200, 200, 200);
   margin-top: 3rem;
@@ -68,13 +72,13 @@ ul.nav-tap li {
   padding: 0.5rem 2rem;
 }
 
-ul.nav-tap li.about:hover,
-ul.nav-tap li.menu:hover,
-ul.nav-tap li.contact:hover {
+ul.nav-tap li.tap-about:hover,
+ul.nav-tap li.tap-menu:hover,
+ul.nav-tap li.tap-contact:hover {
   cursor: pointer;
 }
 
-ul.nav-tap li.reserved {
+ul.nav-tap li.tap-reserved {
   display: none;
 }
 
@@ -96,7 +100,7 @@ ul.nav-tap li:last-child {
   ul.nav-tap li {
     border-right: 1px solid black;
   }
-  ul.nav-tap li.reserved {
+  ul.nav-tap li.tap-reserved {
     display: block;
     width: 100%;
   }
