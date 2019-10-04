@@ -1,11 +1,4 @@
-import _ from 'lodash';
+import navTap from './nav_tap.js';
 
-function component() {
-  const element = document.createElement('div');
-
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-
-  return element;
-}
-
-document.body.appendChild(component());
+const main = document.querySelector('div#content');
+main.appendChild(navTap.taps);
