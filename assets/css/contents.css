@@ -69,7 +69,8 @@
 
 .main-contents p.description {
   width: 50%;
-  min-width: 330px;
+  min-width: 16rem;
+  /* min-width: 330px; */
   margin: 0 auto 2rem auto;
   line-height: 1.8;
 }
