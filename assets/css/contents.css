@@ -1,4 +1,9 @@
 #about,
+#contact {
+  min-height: 80vh;
+}
+
+#about,
 #contact,
 #menu > div {
   width: 90%;
@@ -27,11 +32,8 @@
   margin: 2rem 0;
 }
 
-.food-item img {
-  max-width: 100%;
-}
-
 .menu-description {
+  max-width: 320px;
   margin-top: 0.5rem;
   font-size: 1.2rem;
 }
@@ -40,9 +42,15 @@
   width: 650px;
 }
 
+@media (max-width: 991.98px) {
+  .food-items img {
+    max-width: 320px;
+  }
+}
+
 @media (min-width: 1555px) {
   .hot-drink-menu .menu-description {
-    min-height: 66px;
+    min-height: 2.8rem;
   }
 }
 

@@ -3,8 +3,12 @@ body {
   font-family: 'Roboto-condensed', sans-serif;
   line-height: 1.2;
   max-width: 1900px;
-  min-height: 100vh;
+  /* min-height: 150vh; */
   margin: 0 auto;
+}
+
+.overflow-break {
+  overflow-wrap: break-word;
 }
 
 .white-space-pre {
