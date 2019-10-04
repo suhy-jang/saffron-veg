@@ -8,7 +8,8 @@
 #menu > div {
   width: 90%;
   margin: 1rem auto;
-  padding: 3rem 1rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   box-sizing: border-box;
   background-color: #ffffffb9;
 }
@@ -19,13 +20,14 @@
 
 #menu .h-title,
 .food-items .food-item {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin: 1rem;
 }
 
-.food-items .food-item {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+@media (min-width: 576px) {
+  #menu .h-title,
+  .food-items .food-item {
+    margin: 1rem;
+  }
 }
 
 .food-items {
@@ -33,7 +35,7 @@
 }
 
 .menu-description {
-  max-width: 320px;
+  letter-spacing: 1px;
   margin-top: 0.5rem;
   font-size: 1.2rem;
 }
@@ -42,15 +44,13 @@
   width: 650px;
 }
 
-@media (max-width: 991.98px) {
-  .food-items img {
-    max-width: 320px;
-  }
+.food-items img {
+  max-width: calc(100%);
 }
 
 @media (min-width: 1555px) {
   .hot-drink-menu .menu-description {
-    min-height: 2.8rem;
+    min-height: 4.4rem;
   }
 }
 
@@ -59,7 +59,7 @@
 }
 
 .cold-drink-menu .menu-description {
-  max-width: 140px;
+  max-width: 145px;
 }
 
 
@@ -69,8 +69,7 @@
 
 .main-contents p.description {
   width: 50%;
-  min-width: 16rem;
-  /* min-width: 330px; */
+  min-width: 14rem;
   margin: 0 auto 2rem auto;
   line-height: 1.8;
 }
@@ -87,10 +86,11 @@
 }
 
 .contact_form fieldset {
-  width: 50%;
-  min-width: 350px;
+  width: 500px;
+  max-width: calc(100% - 4rem);
   display: flex;
-  padding: 1rem 0;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   flex-direction: column;
   margin: 1rem auto;
 }
@@ -99,14 +99,30 @@
 .field > input,
 .field > textarea {
   box-sizing: border-box;
-  width: calc(100% - 2rem);
-  margin-left: 1rem;
-  margin-right: 1rem;
+  width: 100%;
 }
 
 fieldset .submit-btn {
-  margin: 2rem 1rem 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  width: 100%;
   cursor: pointer;
+}
+
+@media (min-width: 576px) {
+  .field > label,
+  .field > input,
+  .field > textarea {
+    box-sizing: border-box;
+    width: calc(100% - 2rem);
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  fieldset .submit-btn {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: calc(100% - 2rem);
+  }
 }
 
 .field > label {
@@ -118,8 +134,8 @@ fieldset .submit-btn {
 }
 
 .about-info {
-  width: 50%;
-  min-width: 350px;
+  width: 400px;
+  max-width: calc(100% - 2rem);
   margin: 4rem auto 3rem;
   line-height: 1.8;
 }

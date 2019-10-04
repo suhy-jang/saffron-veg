@@ -28,7 +28,7 @@ const about = (() => {
 
   const create = () => {
     const mainContainer = html.createElement({ tag: 'div', id: 'about', classes: 'main-contents' });
-    const infoContainer = html.createElement({ tag: 'div', classes: 'about-info white-space-pre' });
+    const infoContainer = html.createElement({ tag: 'div', classes: 'about-info white-space-wrap' });
     writeInfos().forEach(info => infoContainer.appendChild(info));
     writeDescriptions().forEach(description => mainContainer.appendChild(description));
     mainContainer.appendChild(infoContainer);

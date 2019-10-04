@@ -32,14 +32,10 @@ const contact = (() => {
     const formContainer = html.createElement({ tag: 'form', classes: 'contact_form' });
     const fieldSet = html.createElement({ tag: 'fieldset' });
     fieldSet.appendChild(buildField({ id: 'username', writeTag: 'input', type: 'text', text: 'Name' }));
-    formContainer.appendChild(fieldSet);
     fieldSet.appendChild(buildField({ id: 'email', writeTag: 'input', type: 'email', text: 'Email' }));
-    formContainer.appendChild(fieldSet);
     fieldSet.appendChild(buildField({ id: 'contact_no', writeTag: 'input', type: 'tel', text: 'Contact no.' }));
-    formContainer.appendChild(fieldSet);
     fieldSet.appendChild(buildField({ id: 'store', writeTag: 'input', type: 'text',
       text: 'Store name & Location (if applicable)' }));
-    formContainer.appendChild(fieldSet);
     fieldSet.appendChild(buildField({ id: 'comments', writeTag: 'textarea', classes: 'comments', text: 'Comments' }));
     const submitBtn = html.createElement({ tag: 'button', classes: 'submit-btn', text: 'Send' });
     fieldSet.appendChild(submitBtn);

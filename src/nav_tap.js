@@ -32,7 +32,7 @@ const navTap = (() => {
       const selector = document.querySelector(`.tap-${p.name}`);
       selector.addEventListener('click', () => togglePartial(partials, p.name));
     });
-    togglePartial(partials, partials[2].name);
+    togglePartial(partials, partials[1].name);
   }
 
   return { create, addClicks };

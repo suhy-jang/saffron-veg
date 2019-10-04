@@ -15,7 +15,7 @@ const menu = (() => {
       },
       idly: {
         imgSrc: './../assets/images/idly_320.webp',
-        displayName: 'Hot Idli (+ sambar, chutney, breakfast only)',
+        displayName: 'Hot Idli (+ sambar, chutney) \n (breakfast only)',
         price: 'Rs.60',
       },
       bisiBele: {
@@ -69,14 +69,9 @@ const menu = (() => {
       },
     },
     hotDrinkMenu: {
-      coffee: {
-        imgSrc: './../assets/images/coffee_320.webp',
-        displayName: 'Coffee with milk',
-        price: 'Rs.20',
-      },
-      blackTea: {
+      tea: {
         imgSrc: './../assets/images/chai_213.webp',
-        displayName: 'Black tea with milk',
+        displayName: 'Coffee with milk / \nBlack tea with milk',
         price: 'Rs.20',
       },
     },
@@ -110,7 +105,8 @@ const menu = (() => {
     const foodItem = html.createElement({ tag: 'div', classes: 'food-item' });
     const imageAlt = `${removeSideDish(item.displayName)} image`;
     const foodImage = html.createElement({ tag: 'img', src: item.imgSrc, alt: imageAlt });
-    const foodBody = html.createElement({ tag: 'div', classes: 'menu-description overflow-break',
+    const foodBody = html.createElement({ tag: 'div',
+                                          classes: 'menu-description white-space-wrap',
                                           text: `${item.displayName} ${item.price}` });
     foodItem.appendChild(foodImage);
     foodItem.appendChild(foodBody);
