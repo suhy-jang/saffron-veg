@@ -27,12 +27,12 @@ const navTap = (() => {
   const addClicks = () => {
     let partials = [];
     ['about', 'menu', 'contact'].forEach(name => partials.push({ name: name }))
-    partials.forEach(p => p.obj = document.querySelector('#' + p.name));
+    partials.forEach(p => p.obj = document.querySelector(`#${p.name}`));
     partials.forEach(p => {
-      const selector = document.querySelector('.tap-' + p.name);
+      const selector = document.querySelector(`.tap-${p.name}`);
       selector.addEventListener('click', () => togglePartial(partials, p.name));
     });
-    togglePartial(partials, partials[0].name);
+    togglePartial(partials, partials[1].name);
   }
 
   return { create, addClicks };
