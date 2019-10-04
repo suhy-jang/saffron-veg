@@ -1,7 +1,6 @@
 import html from './html.js'
 
 const navTap = (() => {
-
   const create = () => {
     const taps = html.createElement({ type: 'ul', classes: ['nav-tap', 'list-style-none'] });
     const tapAbout = html.createElement({ type: 'li', classes: ['tap-about'], text: 'about' });
@@ -15,29 +14,25 @@ const navTap = (() => {
     return taps;
   };
 
-  const toggleDisplay = (taps, choice) => {
-    taps.forEach(tap => {
-      if (tap == choice) {
-        tap.style.display = 'block';
+  const togglePartial = (partialGroup, choiceName) => {
+    partialGroup.forEach(partial => {
+      if (partial.name == choiceName) {
+        partial.obj.style.display = 'block';
       } else {
-        tap.style.display = 'none';
+        partial.obj.style.display = 'none';
       }
     })
   }
 
   const addClicks = () => {
-    const partialAbout = document.querySelector('#about');
-    const partialMenu = document.querySelector('#menu');
-    const partialContact = document.querySelector('#contact');
-
-    const openAbout = toggleDisplay([partialAbout, partialMenu, partialContact], partialAbout);
-    const openMenu = toggleDisplay([partialAbout, partialMenu, partialContact], partialMenu);
-    const openContact = toggleDisplay([partialAbout, partialMenu, partialContact], partialContact);
-
-    document.querySelector('.tap-about').addEventListener('click', openAbout);
-    document.querySelector('.tap-menu').addEventListener('click', openMenu);
-    document.querySelector('.tap-contact').addEventListener('click', openContact);
-    openAbout();
+    let partials = [];
+    ['about', 'menu', 'contact'].forEach(name => partials.push({ name: name }))
+    partials.forEach(p => p.obj = document.querySelector('#' + p.name));
+    partials.forEach(p => {
+      const selector = document.querySelector('.tap-' + p.name);
+      selector.addEventListener('click', () => togglePartial(partials, p.name));
+    });
+    togglePartial(partials, partials[0].name);
   }
 
   return { create, addClicks };

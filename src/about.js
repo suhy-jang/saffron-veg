@@ -1,43 +1,39 @@
-import html from './html.js'
+import html from './html.js';
 
 const about = (() => {
-  const description_saffron =
-    'Saffron is a spice derived from the flower. \
-    The threads of the flower are collected and dried to be used mainly as a \
-    seasoning and colouring agent in food.';
-  const description_vegetarian =
-    'Vegetables contain important vitamins and minerals for our body. \
-    Our restaurant serve south Indian cuisine made by fresh vegetables. \
-    Please visit us to enjoy healthy meals and the flavour with spice.';
+  const descriptionSaffron = 'Saffron is a spice derived from the flower.'
+    + 'The threads of the flower are collected and dried to be used mainly as a'
+    + 'seasoning and colouring agent in food.';
+
+  const descriptionVegetarian = 'Vegetables contain important vitamins and minerals for our body.'
+    + 'Our restaurant serve south Indian cuisine made by fresh vegetables.'
+    + 'Please visit us to enjoy healthy meals and the flavour with spice.';
+
+  const writeDescriptions = () => [
+    html.createElement({ type: 'h1', classes: ['text-align-center', 'h-title'], text: 'About Us' }),
+    html.createElement({ type: 'p', classes: ['description'], text: descriptionSaffron }),
+    html.createElement({ type: 'p', classes: ['description'], text: descriptionVegetarian }),
+  ];
+
+  const writeInfos = () => [
+    html.createElement({ type: 'span', classes: ['title'], text: 'ADDRESS:' }),
+    html.createElement({ type: 'span', text: 'xxx, Tamil Nadu, India\n' }),
+    html.createElement({ type: 'span', classes: ['title'], text: 'CONTACT:' }),
+    html.createElement({ type: 'span', text: '+91.xxxx.xxxx\n' }),
+    html.createElement({ type: 'span', classes: ['title'], text: 'CUISINE:' }),
+    html.createElement({ type: 'span', text: 'South Indian\n' }),
+    html.createElement({ type: 'span', classes: ['title'], text: 'TIMINGS:' }),
+    html.createElement({ type: 'span', text: '07:00 AM - 2:30 PM, 4:00 PM - 8:30 PM\n' }),
+  ];
 
   const create = () => {
     const mainContainer = html.createElement({ type: 'div', id: 'about', classes: ['main-contents'] });
-    const header = html.createElement({ type: 'h1', classes: ['text-align-center', 'h-title'], text: 'About Us'});
-    const pOne = html.createElement({ type: 'p', classes: ['description'], text: description_saffron});
-    const pTwo = html.createElement({ type: 'p', classes: ['description'], text: description_vegetarian});
-    const info = html.createElement({ type: 'div', classes: ['about-info', 'white-space-pre'] });
-    const addressHeader = html.createElement({ type: 'span', classes: ['title'], text: 'ADDRESS:' });
-    const addressBody = html.createElement({ type: 'span', text: 'xxx, Tamil Nadu, India\n' });
-    const contactHeader = html.createElement({ type: 'span', classes: ['title'], text: 'CONTACT:' });
-    const contactBody = html.createElement({ type: 'span', text: '+91.xxxx.xxxx\n' });
-    const cuisineHeader = html.createElement({ type: 'span', classes: ['title'], text: 'CUISINE:' });
-    const cuisineBody = html.createElement({ type: 'span', text: 'South Indian\n' });
-    const timingsHeader = html.createElement({ type: 'span', classes: ['title'], text: 'TIMINGS:' });
-    const timingsBody = html.createElement({ type: 'span', text: '07:00 AM - 2:30 PM, 4:00 PM - 8:30 PM\n' });
-    mainContainer.appendChild(header);
-    mainContainer.appendChild(pOne);
-    mainContainer.appendChild(pTwo);
-    mainContainer.appendChild(info);
-    info.appendChild(addressHeader);
-    info.appendChild(addressBody);
-    info.appendChild(contactHeader);
-    info.appendChild(contactBody);
-    info.appendChild(cuisineHeader);
-    info.appendChild(cuisineBody);
-    info.appendChild(timingsHeader);
-    info.appendChild(timingsBody);
+    const infoContainer = html.createElement({ type: 'div', classes: ['about-info', 'white-space-pre'] });
+    writeInfos().forEach(info => infoContainer.appendChild(info));
+    writeDescriptions().forEach(description => mainContainer.appendChild(description));
+    mainContainer.appendChild(infoContainer);
     return mainContainer;
-  }
+  };
   return { create };
 })();
 
