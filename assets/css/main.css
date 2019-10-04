@@ -102,16 +102,6 @@ ul.nav-tap li:last-child {
   }
 }
 
-#about,
-#contact,
-#menu > div {
-  width: 90%;
-  margin: 1rem auto;
-  padding: 1rem;
-  box-sizing: border-box;
-  background-color: #ffffffb9;
-}
-
 .h-title {
   width: 100%;
 }

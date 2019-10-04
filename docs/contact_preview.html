@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link href="https://fonts.googleapis.com/css?family=Acme%7cInconsolata%7cIndie+Flower%7cRoboto+Condensed" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./../assets/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="./../assets/css/menu.css">
-    <link rel="stylesheet" type="text/css" href="./../assets/css/about.css">
+    <link rel="stylesheet" type="text/css" href="./../assets/css/contents.css">
     <link rel="stylesheet" type="text/css" href="./../assets/css/main.css">
     <title>Saffron Veg Restaurant | South Indian Restaurant</title>
   </head>
@@ -30,27 +29,27 @@
       <p class="description">
         Please fill out this form below. We will be in touch with you soon.
       </p>
-      <form>
+      <form class="contact_form" onsubmit="xx()" method="post">
         <fieldset>
           <div class="field">
-            <label for="name">name</label>
-            <input id="name-form" type="text" name="name" />
+            <label for="username">name</label>
+            <input id="username" type="text" name="username" />
           </div>
           <div class="field">
             <label for="email">email</label>
-            <input id="email-form" type="email" name="email" />
+            <input id="email" type="email" name="email" />
           </div>
           <div class="field">
             <label for="contact_no">contact no.</label>
-            <input id="contact_no-form" type="tel" name="contact_no" />
+            <input id="contact_no" type="tel" name="contact_no" />
           </div>
           <div class="field">
-            <label for="store_name_location">Store name & Location (if applicable)</label>
-            <input id="store_name_location-form" type="text" name="store_name_location" />
+            <label for="store">Store name & Location (if applicable)</label>
+            <input id="store" type="text" name="store" />
           </div>
           <div class="field">
-            <label for="comment">Comments</label>
-            <input id="comment-form" type="text" name="comment" />
+            <label for="comments">Comments</label>
+            <textarea id="comments" class="comments" name="comments"></textarea>
           </div>
           <button class="submit-btn">Send</button>
         </fieldset>

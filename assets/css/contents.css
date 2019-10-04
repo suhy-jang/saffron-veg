@@ -1,0 +1,121 @@
+
+#about,
+#contact,
+#menu > div {
+  width: 90%;
+  margin: 1rem auto;
+  padding: 3rem 1rem;
+  box-sizing: border-box;
+  background-color: #ffffffb9;
+}
+
+#menu {
+  font-family: 'Acme', sans-serif;
+}
+
+#menu .h-title,
+.food-items .food-item {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.food-items .food-item {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.food-items {
+  margin: 2rem 0;
+}
+
+.food-item img {
+  max-width: 100%;
+}
+
+.menu-description {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.hot-drink-menu {
+  width: 650px;
+}
+
+@media (min-width: 1555px) {
+  .hot-drink-menu .menu-description {
+    min-height: 66px;
+  }
+}
+
+.cold-drink-menu {
+  width: 750px;
+}
+
+.cold-drink-menu .menu-description {
+  max-width: 140px;
+}
+
+
+.main-contents .h-title {
+  margin-bottom: 3rem;
+}
+
+.main-contents p.description {
+  width: 50%;
+  min-width: 330px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.8;
+}
+
+.main-contents p::first-letter {
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.contact_form {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.contact_form fieldset {
+  width: 50%;
+  min-width: 350px;
+  display: flex;
+  padding: 1rem 0;
+  flex-direction: column;
+  margin: 1rem auto;
+}
+
+.field > label,
+.field > input,
+.field > textarea {
+  box-sizing: border-box;
+  width: calc(100% - 2rem);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+fieldset .submit-btn {
+  margin: 2rem 1rem 1rem;
+  cursor: pointer;
+}
+
+.field > label {
+  margin-bottom: 0.3rem;
+}
+
+.field > input {
+  margin-bottom: 1rem;
+}
+
+.about-info {
+  width: 50%;
+  min-width: 350px;
+  margin: 4rem auto 3rem;
+  line-height: 1.8;
+}
+
+.about-info .title {
+  font-weight: 600;
+}
