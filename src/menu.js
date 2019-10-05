@@ -1,5 +1,5 @@
-import html from './html.js';
-import menuItems from './menu_items.js';
+import html from './html';
+import menuItems from './menu_items';
 
 const menu = (() => {
   const removeSideDish = name => name.split(' (')[0];
@@ -27,7 +27,7 @@ const menu = (() => {
   };
 
   const create = () => {
-    const mainContainer = html.createElement({ tag: 'div', id: 'menu' });
+    const mainContainer = html.createElement({ tag: 'div', id: 'menu', classes: 'menu-content' });
     mainContainer.appendChild(createFoodItemGroup({ itemClass: 'set-menu', headerText: 'Meal', menuItem: 'setMenu' }));
     mainContainer.appendChild(createFoodItemGroup({ itemClass: 'non-set-menu', headerText: 'General Dishes', menuItem: 'nonSetMenu' }));
     mainContainer.appendChild(createFoodItemGroup({ itemClass: 'sweet-menu', headerText: 'Sweets', menuItem: 'sweetMenu' }));

@@ -1,38 +1,31 @@
-import html from './html.js';
+import html from './html';
 
 const navTap = (() => {
   const create = () => {
     const taps = html.createElement({ tag: 'ul', classes: 'nav-tap list-style-none' });
-    const tapAbout = html.createElement({ tag: 'li', classes: 'tap-about', text: 'about' });
-    const tapMenu = html.createElement({ tag: 'li', classes: 'tap-menu', text: 'menu' });
-    const tapContact = html.createElement({ tag: 'li', classes: 'tap-contact', text: 'contact' });
-    const tapReserved = html.createElement({ tag: 'li', classes: 'tap-reserved' });
-    taps.appendChild(tapAbout);
-    taps.appendChild(tapMenu);
-    taps.appendChild(tapContact);
-    taps.appendChild(tapReserved);
+    taps.appendChild(html.createElement({ tag: 'li', classes: 'tap-about', text: 'about' }));
+    taps.appendChild(html.createElement({ tag: 'li', classes: 'tap-menu', text: 'menu' }));
+    taps.appendChild(html.createElement({ tag: 'li', classes: 'tap-contact', text: 'contact' }));
+    taps.appendChild(html.createElement({ tag: 'li', classes: 'tap-reserved' }));
     return taps;
   };
 
-  const togglePartial = (partialGroup, choiceName) => {
-    partialGroup.forEach((partial) => {
-      if (partial.name === choiceName) {
-        partial.obj.style.display = 'block';
-      } else {
-        partial.obj.style.display = 'none';
-      }
-    });
+  const togglePartial = (choiceName) => {
+    const selector = document.querySelector(`#${choiceName}`);
+    const startIndex = 1;
+    const numTap = 3;
+    for (let i = startIndex; i < startIndex + numTap; i++) {
+      selector.parentNode.childNodes[i].style.display = 'none';
+    }
+    selector.style.display = 'block';
   };
 
-  const toggle = ({ default_tap }) => {
-    const partials = [];
-    ['about', 'menu', 'contact'].forEach(name => partials.push({ name }));
-    partials.forEach(p => p.obj = document.querySelector(`#${p.name}`));
-    partials.forEach((p) => {
-      const selector = document.querySelector(`.tap-${p.name}`);
-      selector.addEventListener('click', () => togglePartial(partials, p.name));
+  const toggle = ({ defaultTapName }) => {
+    ['about', 'menu', 'contact'].forEach((name) => {
+      const selector = document.querySelector(`.tap-${name}`);
+      selector.addEventListener('click', () => togglePartial(name));
     });
-    togglePartial(partials, default_tap);
+    togglePartial(defaultTapName);
   };
 
   return { create, toggle };

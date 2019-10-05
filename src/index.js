@@ -1,9 +1,9 @@
-import navTap from './nav_tap.js';
-import about from './about.js';
-import menu from './menu.js';
-import contact from './contact.js';
-import layout from './layout.js';
-import html from './html.js';
+import navTap from './nav_tap';
+import about from './about';
+import menu from './menu';
+import contact from './contact';
+import layout from './layout';
+import html from './html';
 
 const main = document.querySelector('div#content');
 
@@ -15,5 +15,5 @@ main.appendChild(contact.create());
 main.parentNode.insertBefore(layout.createHeader(), main);
 main.parentNode.appendChild(layout.createFooter());
 
-navTap.toggle({ default_tap: 'about' });
+navTap.toggle({ defaultTapName: 'about' });
 html.resizeTextarea();

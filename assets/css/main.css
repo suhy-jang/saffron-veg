@@ -118,19 +118,18 @@ button {
 
 ul.nav-tap li {
   color: white;
-  background-color: rgb(120,120,130);
-  background: linear-gradient(0deg, rgb(145,145,155) 0%, rgb(110,110,120) 50%, rgb(95,95,105) 50%, rgb(120,120,130) 100%);
+  background: rgb(120,120,130) linear-gradient(0deg, rgb(145,145,155) 0%, rgb(110,110,120) 50%, rgb(95,95,105) 50%, rgb(120,120,130) 100%);
   font: 500 1.5rem 'Inconsolata', monospace;
   padding: 0.5rem 2rem;
 }
 
-ul.nav-tap li.tap-about:hover,
-ul.nav-tap li.tap-menu:hover,
-ul.nav-tap li.tap-contact:hover {
+.tap-about:hover,
+.tap-menu:hover,
+.tap-contact:hover {
   cursor: pointer;
 }
 
-ul.nav-tap li.tap-reserved {
+.tap-reserved {
   display: none;
 }
 
@@ -152,7 +151,7 @@ ul.nav-tap li:last-child {
   ul.nav-tap li {
     border-right: 1px solid black;
   }
-  ul.nav-tap li.tap-reserved {
+  .tap-reserved {
     display: block;
     width: 100%;
   }

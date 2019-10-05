@@ -1,5 +1,5 @@
-import html from './html.js';
 import moment from 'moment';
+import html from './html';
 
 const layout = (() => {
   const createHeader = () => html.createElement({

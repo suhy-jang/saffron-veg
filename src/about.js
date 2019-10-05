@@ -1,4 +1,4 @@
-import html from './html.js';
+import html from './html';
 
 const about = (() => {
   const descriptionSaffron = 'Saffron is a spice derived from the flower.'
@@ -27,7 +27,7 @@ const about = (() => {
   ];
 
   const create = () => {
-    const mainContainer = html.createElement({ tag: 'div', id: 'about', classes: 'main-contents' });
+    const mainContainer = html.createElement({ tag: 'div', id: 'about', classes: 'about-content' });
     const infoContainer = html.createElement({ tag: 'div', classes: 'about-info white-space-wrap' });
     writeInfos().forEach(info => infoContainer.appendChild(info));
     writeDescriptions().forEach(description => mainContainer.appendChild(description));

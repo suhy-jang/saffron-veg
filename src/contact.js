@@ -1,4 +1,4 @@
-import html from './html.js';
+import html from './html';
 
 const contact = (() => {
   const descriptionContact = 'Do you have a suggestion or any service related query?'
@@ -62,7 +62,7 @@ const contact = (() => {
   };
 
   const create = () => {
-    const mainContainer = html.createElement({ tag: 'div', id: 'contact', classes: 'main-contents' });
+    const mainContainer = html.createElement({ tag: 'div', id: 'contact', classes: 'contact-content' });
     writeDescriptions().forEach(description => mainContainer.appendChild(description));
     mainContainer.appendChild(buildForm());
     return mainContainer;

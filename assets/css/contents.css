@@ -1,23 +1,43 @@
-#about,
-#contact,
-#menu > div {
+.about-content .h-title,
+.contact-content .h-title {
+  margin-bottom: 3rem;
+}
+
+.about-content p.description,
+.contact-content p.description {
+  width: 50%;
+  min-width: 14rem;
+  margin: 0 auto 2rem auto;
+  line-height: 1.8;
+}
+
+.about-content p::first-letter,
+.contact-content p::first-letter {
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.about-content,
+.contact-content,
+.menu-content > div {
   width: 90%;
   margin: 1rem auto;
   box-sizing: border-box;
   background-color: #ffffffb9;
 }
 
-#about,
-#contact {
+.about-content,
+.contact-content {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
-#menu {
+.menu-content {
   font-family: 'Acme', sans-serif;
 }
 
-#menu .h-title,
+.menu-content .h-title,
 .food-items .food-item {
   margin: 1rem;
 }
@@ -57,24 +77,6 @@
 
 .cold-drink-menu .menu-description {
   max-width: 145px;
-}
-
-
-.main-contents .h-title {
-  margin-bottom: 3rem;
-}
-
-.main-contents p.description {
-  width: 50%;
-  min-width: 14rem;
-  margin: 0 auto 2rem auto;
-  line-height: 1.8;
-}
-
-.main-contents p::first-letter {
-  font-size: 2rem;
-  line-height: 1;
-  font-weight: 500;
 }
 
 .contact_form {
@@ -135,7 +137,7 @@ fieldset .submit-btn {
     width: calc(100% - 2rem);
   }
 
-  #menu > div {
+  .menu-content > div {
     padding: 2rem;
   }
 }
