@@ -1,8 +1,36 @@
 body {
   font-family: 'Roboto-condensed', sans-serif;
   line-height: 1.2;
+}
+
+div#content {
   max-width: 1900px;
   margin: 0 auto;
+  min-height: calc(100vh - 307px);
+  margin-bottom: 3rem;
+}
+
+header.restaurant-name {
+  font: 800 4rem 'Indie Flower', cursive;
+  color: white;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  header.restaurant-name {
+    font-size: 6rem;
+  }
+
+  div#content {
+    min-height: calc(100vh - 354px);
+  }
+}
+
+footer.copyright {
+  background-color: rgb(200, 200, 200);
+  padding: 1rem;
 }
 
 /* Small devices (landscape phones, under 768px) */
@@ -44,14 +72,12 @@ button {
   border-radius: 5px;
 }
 
-.white-space-wrap {
-  white-space: pre-wrap;
+.h-title {
+  width: 100%;
 }
 
-.copyright {
-  background-color: rgb(200, 200, 200);
-  margin-top: 3rem;
-  padding: 1rem;
+.white-space-wrap {
+  white-space: pre-wrap;
 }
 
 .d-flex {
@@ -73,19 +99,6 @@ button {
 
 .text-align-center {
   text-align: center;
-}
-
-.restaurant-name {
-  font: 800 4rem 'Indie Flower', cursive;
-  color: white;
-  text-align: center;
-  margin: 2rem;
-}
-
-@media (min-width: 768px) {
-  .restaurant-name {
-    font-size: 6rem;
-  }
 }
 
 .text-stroke-black {
@@ -141,12 +154,4 @@ ul.nav-tap li:last-child {
     display: block;
     width: 100%;
   }
-}
-
-.h-title {
-  width: 100%;
-}
-
-.test-1 {
-  color: white;
 }

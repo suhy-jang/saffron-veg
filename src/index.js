@@ -7,14 +7,13 @@ import html from './html.js';
 
 const main = document.querySelector('div#content');
 
-main.appendChild(layout.createHeader());
-
 main.appendChild(navTap.create());
 main.appendChild(about.create());
 main.appendChild(menu.create());
 main.appendChild(contact.create());
 
-main.appendChild(layout.createFooter());
+main.parentNode.insertBefore(layout.createHeader(), main);
+main.parentNode.appendChild(layout.createFooter());
 
-navTap.toggle({ start: 'contact' });
+navTap.toggle({ start: 'about' });
 html.resizeTextarea();

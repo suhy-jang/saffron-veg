@@ -1,9 +1,4 @@
 #about,
-#contact {
-  min-height: 80vh;
-}
-
-#about,
 #contact,
 #menu > div {
   width: 90%;
@@ -23,11 +18,15 @@
   margin: 1rem;
 }
 
-@media (min-width: 576px) {
-  #menu .h-title,
-  .food-items .food-item {
-    margin: 1rem;
-  }
+.about-info {
+  width: 27rem;
+  max-width: calc(100% - 2rem);
+  margin: 4rem auto 3rem;
+  line-height: 1.8;
+}
+
+.about-info .title {
+  font-weight: 600;
 }
 
 .food-items {
@@ -46,12 +45,6 @@
 
 .food-items img {
   max-width: calc(100%);
-}
-
-@media (min-width: 1555px) {
-  .hot-drink-menu .menu-description {
-    min-height: 4.4rem;
-  }
 }
 
 .cold-drink-menu {
@@ -132,15 +125,4 @@ fieldset .submit-btn {
     margin-right: 1rem;
     width: calc(100% - 2rem);
   }
-}
-
-.about-info {
-  width: 400px;
-  max-width: calc(100% - 2rem);
-  margin: 4rem auto 3rem;
-  line-height: 1.8;
-}
-
-.about-info .title {
-  font-weight: 600;
 }

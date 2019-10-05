@@ -16,13 +16,13 @@ const about = (() => {
   ];
 
   const writeInfos = () => [
-    html.createElement({ tag: 'span', classes: 'title', text: 'ADDRESS:' }),
+    html.createElement({ tag: 'span', classes: 'title', text: 'ADDRESS: ' }),
     html.createElement({ tag: 'span', text: 'xxx, Tamil Nadu, India\n' }),
-    html.createElement({ tag: 'span', classes: 'title', text: 'CONTACT:' }),
+    html.createElement({ tag: 'span', classes: 'title', text: 'CONTACT: ' }),
     html.createElement({ tag: 'span', text: '+91.xxxx.xxxx\n' }),
-    html.createElement({ tag: 'span', classes: 'title', text: 'CUISINE:' }),
+    html.createElement({ tag: 'span', classes: 'title', text: 'CUISINE: ' }),
     html.createElement({ tag: 'span', text: 'South Indian\n' }),
-    html.createElement({ tag: 'span', classes: 'title', text: 'TIMINGS:' }),
+    html.createElement({ tag: 'span', classes: 'title', text: 'TIMINGS: ' }),
     html.createElement({ tag: 'span', text: '07:00 AM - 2:30 PM, 4:00 PM - 8:30 PM\n' }),
   ];
 
