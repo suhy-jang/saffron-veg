@@ -32,8 +32,8 @@ const menu = (() => {
     mainContainer.appendChild(createFoodItemGroup({ itemClass: 'non-set-menu', headerText: 'General Dishes', menuItem: 'nonSetMenu' }));
     mainContainer.appendChild(createFoodItemGroup({ itemClass: 'sweet-menu', headerText: 'Sweets', menuItem: 'sweetMenu' }));
     const drinkContainer = html.createElement({ tag: 'div', classes: 'drink-menu food-items d-flex flex-wrap' });
-    drinkContainer.appendChild(createFoodItemGroup({ itemClass: 'hot-drink-menu', headerText: 'Hot drinks', menuItem: 'hotDrinkMenu' }));
-    drinkContainer.appendChild(createFoodItemGroup({ itemClass: 'cold-drink-menu', headerText: 'Cold drinks', menuItem: 'coldDrinkMenu' }));
+    drinkContainer.appendChild(createFoodItemGroup({ itemClass: 'hot-drink-menu', headerText: 'Hot Drinks', menuItem: 'hotDrinkMenu' }));
+    drinkContainer.appendChild(createFoodItemGroup({ itemClass: 'cold-drink-menu', headerText: 'Cold Drinks', menuItem: 'coldDrinkMenu' }));
     mainContainer.appendChild(drinkContainer);
     return mainContainer;
   };

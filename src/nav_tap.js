@@ -3,9 +3,9 @@ import html from './html';
 const navTap = (() => {
   const create = () => {
     const taps = html.createElement({ tag: 'ul', classes: 'nav-tap list-style-none' });
-    taps.appendChild(html.createElement({ tag: 'li', classes: 'tap-about', text: 'about' }));
-    taps.appendChild(html.createElement({ tag: 'li', classes: 'tap-menu', text: 'menu' }));
-    taps.appendChild(html.createElement({ tag: 'li', classes: 'tap-contact', text: 'contact' }));
+    taps.appendChild(html.createElement({ tag: 'li', classes: 'tap-about', text: 'ABOUT' }));
+    taps.appendChild(html.createElement({ tag: 'li', classes: 'tap-menu', text: 'MENU' }));
+    taps.appendChild(html.createElement({ tag: 'li', classes: 'tap-contact', text: 'CONTACT' }));
     taps.appendChild(html.createElement({ tag: 'li', classes: 'tap-reserved' }));
     return taps;
   };

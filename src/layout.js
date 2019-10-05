@@ -5,7 +5,7 @@ const layout = (() => {
   const createHeader = () => html.createElement({
     tag: 'header',
     classes: 'restaurant-name text-stroke-black',
-    text: 'Saffron Veg',
+    text: 'SAFFRON VEG',
   });
   const createFooter = () => html.createElement({
     tag: 'footer',
