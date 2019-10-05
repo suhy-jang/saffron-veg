@@ -5,12 +5,12 @@ const html = (() => {
     const item = document.createElement(tag);
     if (id) item.setAttribute('id', id);
     if (classes) classes.split(' ').forEach(one => item.classList.add(one));
-    if (text) item.textContent = text;
     if (src) item.src = src;
     if (alt) item.alt = alt;
     if (name) item.name = name;
     if (type) item.type = type;
     if (htmlFor) item.htmlFor = htmlFor;
+    if (text) item.appendChild(document.createTextNode(text));
     return item;
   };
 

@@ -3,10 +3,14 @@
 #menu > div {
   width: 90%;
   margin: 1rem auto;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
   box-sizing: border-box;
   background-color: #ffffffb9;
+}
+
+#about,
+#contact {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 #menu {
@@ -90,13 +94,18 @@
 
 .field input,
 .field textarea {
-  margin-bottom: 1rem;
-  width: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
   border-radius: 5px;
 }
 
 .field input {
   padding: 3px;
+  width: calc(100% - 0.75em);
+}
+
+.field textarea {
+  width: 100%;
 }
 
 .field label {
@@ -124,5 +133,9 @@ fieldset .submit-btn {
     margin-left: 1rem;
     margin-right: 1rem;
     width: calc(100% - 2rem);
+  }
+
+  #menu > div {
+    padding: 2rem;
   }
 }

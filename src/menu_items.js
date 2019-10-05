@@ -17,7 +17,7 @@ const menuItems = {
     },
     bisiBele: {
       imgSrc: './../assets/images/bisibele_bath_320.webp',
-      displayName: 'Bisi bele (+ chips)',
+      displayName: 'Bisi bele bath (+ chips)',
       price: 'Rs.80',
     },
   },
@@ -50,7 +50,7 @@ const menuItems = {
   },
   sweetMenu: {
     gulabJamun: {
-      imgSrc: './../assets/images/gulab_jamun_213.webp',
+      imgSrc: './../assets/images/gulab_jamun_320.webp',
       displayName: 'Gulab jamun',
       price: 'Rs.10',
     },
@@ -60,7 +60,7 @@ const menuItems = {
       price: 'Rs.10',
     },
     carrotHalwa: {
-      imgSrc: './../assets/images/carrot_halwa_213.webp',
+      imgSrc: './../assets/images/carrot_halwa_320.webp',
       displayName: 'Carrot halwa',
       price: 'Rs.20',
     },

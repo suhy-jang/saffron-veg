@@ -11,6 +11,8 @@ div#content {
 }
 
 header.restaurant-name {
+  max-width: calc(100% - 2rem);
+  margin: 0 auto;
   font: 800 4rem 'Indie Flower', cursive;
   color: white;
   text-align: center;

@@ -15,5 +15,5 @@ main.appendChild(contact.create());
 main.parentNode.insertBefore(layout.createHeader(), main);
 main.parentNode.appendChild(layout.createFooter());
 
-navTap.toggle({ start: 'about' });
+navTap.toggle({ default_tap: 'about' });
 html.resizeTextarea();
