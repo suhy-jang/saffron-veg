@@ -14,34 +14,52 @@ const contact = (() => {
     html.createElement({ tag: 'p', classes: 'description', text: descriptionForm }),
   ];
 
-  const buildField = ({ id, writeTag, type, text }) => {
+  const buildField = ({
+    id, writeTag, type, text,
+  }) => {
     const container = html.createElement({ tag: 'div', classes: 'field' });
-    const label = html.createElement({ tag: 'label', htmlFor: id, text: text });
+    const label = html.createElement({ tag: 'label', htmlFor: id, text });
     let write;
-    if (writeTag == 'input') {
-      write = html.createElement({ tag: writeTag, id: id, name: id, type: type });
+    if (writeTag === 'input') {
+      write = html.createElement({
+        tag: writeTag, id, name: id, type,
+      });
     } else {
-      write = html.createElement({ tag: writeTag, id: id, name: id, classes: id });
+      write = html.createElement({
+        tag: writeTag, id, name: id, classes: id,
+      });
     }
     container.appendChild(label);
     container.appendChild(write);
     return container;
-  }
+  };
 
   const buildForm = () => {
     const formContainer = html.createElement({ tag: 'form', classes: 'contact_form' });
     const fieldSet = html.createElement({ tag: 'fieldset' });
-    fieldSet.appendChild(buildField({ id: 'username', writeTag: 'input', type: 'text', text: 'Name' }));
-    fieldSet.appendChild(buildField({ id: 'email', writeTag: 'input', type: 'email', text: 'Email' }));
-    fieldSet.appendChild(buildField({ id: 'contact_no', writeTag: 'input', type: 'tel', text: 'Contact no.' }));
-    fieldSet.appendChild(buildField({ id: 'store', writeTag: 'input', type: 'text',
-      text: 'Store name & Location (if applicable)' }));
-    fieldSet.appendChild(buildField({ id: 'comments', writeTag: 'textarea', classes: 'comments', text: 'Comments' }));
+    fieldSet.appendChild(buildField({
+      id: 'username', writeTag: 'input', type: 'text', text: 'Name',
+    }));
+    fieldSet.appendChild(buildField({
+      id: 'email', writeTag: 'input', type: 'email', text: 'Email',
+    }));
+    fieldSet.appendChild(buildField({
+      id: 'contact_no', writeTag: 'input', type: 'tel', text: 'Contact no.',
+    }));
+    fieldSet.appendChild(buildField({
+      id: 'store',
+      writeTag: 'input',
+      type: 'text',
+      text: 'Store name & Location (if applicable)',
+    }));
+    fieldSet.appendChild(buildField({
+      id: 'comments', writeTag: 'textarea', classes: 'comments', text: 'Comments',
+    }));
     const submitBtn = html.createElement({ tag: 'button', classes: 'submit-btn', text: 'Send' });
     fieldSet.appendChild(submitBtn);
     formContainer.appendChild(fieldSet);
     return formContainer;
-  }
+  };
 
   const create = () => {
     const mainContainer = html.createElement({ tag: 'div', id: 'contact', classes: 'main-contents' });

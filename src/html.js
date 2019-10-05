@@ -4,8 +4,8 @@ const html = (() => {
   }) => {
     const item = document.createElement(tag);
     if (id) item.setAttribute('id', id);
-    if (classes) classes.split(' ').forEach(name => item.classList.add(name));
-    if (text) item.innerHTML = text;
+    if (classes) classes.split(' ').forEach(one => item.classList.add(one));
+    if (text) item.textContent = text;
     if (src) item.src = src;
     if (alt) item.alt = alt;
     if (name) item.name = name;
@@ -14,7 +14,15 @@ const html = (() => {
     return item;
   };
 
-  return { createElement };
+  const resizeTextarea = () => {
+    const textarea = document.querySelector('textarea');
+    textarea.addEventListener('keyup', () => {
+      textarea.style.height = 'auto';
+      textarea.style.height = `${20 + textarea.scrollHeight}px`;
+    });
+  };
+
+  return { createElement, resizeTextarea };
 })();
 
 export default html;

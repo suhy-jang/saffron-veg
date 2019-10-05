@@ -95,15 +95,23 @@
   margin: 1rem auto;
 }
 
-.field > label,
-.field > input,
-.field > textarea {
-  box-sizing: border-box;
+.field input,
+.field textarea {
+  margin-bottom: 1rem;
   width: 100%;
+  border-radius: 5px;
+}
+
+.field input {
+  padding: 3px;
+}
+
+.field label {
+  margin-bottom: 0.3rem;
 }
 
 fieldset .submit-btn {
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
   width: 100%;
   cursor: pointer;
@@ -118,19 +126,12 @@ fieldset .submit-btn {
     margin-left: 1rem;
     margin-right: 1rem;
   }
+
   fieldset .submit-btn {
     margin-left: 1rem;
     margin-right: 1rem;
     width: calc(100% - 2rem);
   }
-}
-
-.field > label {
-  margin-bottom: 0.3rem;
-}
-
-.field > input {
-  margin-bottom: 1rem;
 }
 
 .about-info {
