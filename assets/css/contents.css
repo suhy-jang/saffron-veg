@@ -1,0 +1,143 @@
+.about-content .h-title,
+.contact-content .h-title {
+  margin-bottom: 3rem;
+}
+
+.about-content p.description,
+.contact-content p.description {
+  width: 50%;
+  min-width: 14rem;
+  margin: 0 auto 2rem auto;
+  line-height: 1.8;
+}
+
+.about-content p::first-letter,
+.contact-content p::first-letter {
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.about-content,
+.contact-content,
+.menu-content > div {
+  width: 90%;
+  margin: 1rem auto;
+  box-sizing: border-box;
+  background-color: #ffffffb9;
+}
+
+.about-content,
+.contact-content {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.menu-content {
+  font-family: 'Acme', sans-serif;
+}
+
+.menu-content .h-title,
+.food-items .food-item {
+  margin: 1rem;
+}
+
+.about-info {
+  width: 27rem;
+  max-width: calc(100% - 2rem);
+  margin: 4rem auto 3rem;
+  line-height: 1.8;
+}
+
+.about-info .title {
+  font-weight: 600;
+}
+
+.food-items {
+  margin: 2rem 0;
+}
+
+.menu-description {
+  letter-spacing: 1px;
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.hot-drink-menu {
+  width: 650px;
+}
+
+.food-items img {
+  max-width: calc(100%);
+}
+
+.cold-drink-menu {
+  width: 750px;
+}
+
+.cold-drink-menu .menu-description {
+  max-width: 145px;
+}
+
+.contact_form {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.contact_form fieldset {
+  width: 500px;
+  max-width: calc(100% - 4rem);
+  display: flex;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  flex-direction: column;
+  margin: 1rem auto;
+}
+
+.field input,
+.field textarea {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 5px;
+}
+
+.field input {
+  padding: 3px;
+  width: calc(100% - 0.75em);
+}
+
+.field textarea {
+  width: 100%;
+}
+
+.field label {
+  margin-bottom: 0.3rem;
+}
+
+fieldset .submit-btn {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+@media (min-width: 576px) {
+  .field > label,
+  .field > input,
+  .field > textarea {
+    box-sizing: border-box;
+    width: calc(100% - 2rem);
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  fieldset .submit-btn {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: calc(100% - 2rem);
+  }
+
+  .menu-content > div {
+    padding: 2rem;
+  }
+}

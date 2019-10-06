@@ -1,8 +1,10 @@
-# Saffron Dhaba
+# Saffron Veg Restaurant
 This is a project for building a Restaurant Page using classes and modules. This is part of the [Odin Project's Javascript Curriculum](https://www.theodinproject.com/courses/javascript/lessons/restaurant-page).
 
 ## Function Description
--
+- ABOUT: Restaurant introduction, including address, contact number
+- MENU: Introducing menu which restaurant serves
+- CONTACT: Customers can send feedback to the restaurant
 
 ## Technologies
 - Javascript: ECMAScript 2018 (es6)
@@ -11,7 +13,7 @@ This is a project for building a Restaurant Page using classes and modules. This
 
 ## Deployment
 
-- [Online Deployment](https://shjang7.github.io/saffron-paradise/)
+- [Online Deployment](https://shjang7.github.io/saffron-veg/)
 
 ## Contributors
 
@@ -19,7 +21,7 @@ This is a solo project by me: [Suhyeon Jang](https://github.com/shjang7)
 
 ## Contributing
 
-1. Fork it (https://github.com/shjang7/saffron-paradise/fork)
+1. Fork it (https://github.com/shjang7/saffron-veg/fork)
 2. Create your feature branch (git checkout -b feature/[choose-a-name])
 3. Commit your changes (git commit -am 'what this commit will fix/add')
 4. Push to the branch (git push origin feature/[chosen-name])

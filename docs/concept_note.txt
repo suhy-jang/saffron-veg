@@ -1,0 +1,29 @@
+concept: South Indian restaurant
+menu:
+* set
+ - Dosai (with sambar, chutney) Rs. 60
+ - Upma (with sambar, chutney) Rs. 60
+ - Hot Idli (morning only, with sambar, chutney) Rs. 60
+ - Bisi bele bath (with chips) Rs. 80
+
+* non set
+ - Chitranna Rs. 40
+ - Chana masala Rs. 40
+ - Sambar Rs. 30
+ - Potato curry Rs. 40
+ - Aloo Vada Rs. 20
+
+* sweet
+ - Gulab Jamun Rs. 10
+ - Jalebi Rs. 10
+ - Carrot halwa Rs. 20
+
+* hot drink
+ - Coffee (with milk and sugar) Rs. 20
+ - Black tea (with milk and sugar) Rs. 20
+
+* cold drink
+ - Water Jug (1 liter) Rs. 20
+ - Cola Rs. 40
+ - Pomegranate milkshake Rs. 60
+ - Chocolate milkshake Rs. 60
