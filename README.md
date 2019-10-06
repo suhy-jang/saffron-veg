@@ -15,6 +15,12 @@ This is a project for building a restaurant page using "classes and modules". Th
 
 - [Online Deployment](https://shjang7.github.io/saffron-veg/dist/index.html)
 
+## Documents
+
+- [Concept note](./docs/concept_note.txt)
+- [Basic architecture note](./docs/architecture.txt)
+- [Photo Copyrights](./docs/photo_copyright.md)
+
 ## Contributors
 
 This is a solo project by me: [Suhyeon Jang](https://github.com/shjang7)
