@@ -1,5 +1,5 @@
 # Saffron Veg Restaurant
-This is a project for building a Restaurant Page using classes and modules. This is part of the [Odin Project's Javascript Curriculum](https://www.theodinproject.com/courses/javascript/lessons/restaurant-page).
+This is a project for building a restaurant page using "classes and modules". This is part of the [Odin Project's Javascript Curriculum](https://www.theodinproject.com/courses/javascript/lessons/restaurant-page).
 
 ## Function Description
 - ABOUT: Restaurant introduction, including address, contact number
@@ -13,7 +13,7 @@ This is a project for building a Restaurant Page using classes and modules. This
 
 ## Deployment
 
-- [Online Deployment](https://shjang7.github.io/saffron-veg/)
+- [Online Deployment](https://shjang7.github.io/saffron-veg/dist/index.html)
 
 ## Contributors
 
