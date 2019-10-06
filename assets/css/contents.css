@@ -63,12 +63,8 @@
   font-size: 1.2rem;
 }
 
-.hot-drink-menu {
-  width: 650px;
-}
-
 .food-items img {
-  max-width: calc(100%);
+  max-width: 100%;
 }
 
 .cold-drink-menu {
