@@ -1,13 +1,13 @@
 import html from './html';
 
 const about = (() => {
-  const descriptionSaffron = 'Saffron is a spice derived from the flower.'
+  const descriptionSaffron = 'Saffron is a spice derived from the flower. '
     + 'The threads of the flower are collected and dried to be used mainly as a'
-    + 'seasoning and colouring agent in food.';
+    + 'seasoning and colouring agent in food. ';
 
-  const descriptionVegetarian = 'Vegetables contain important vitamins and minerals for our body.'
-    + 'Our restaurant serve south Indian cuisine made by fresh vegetables.'
-    + 'Please visit us to enjoy healthy meals and the flavour with spice.';
+  const descriptionVegetarian = 'Vegetables contain important vitamins and minerals for our body. '
+    + 'Our restaurant serve south Indian cuisine made by fresh vegetables. '
+    + 'Please visit us to enjoy healthy meals and the flavour with spice. ';
 
   const writeDescriptions = () => [
     html.createElement({ tag: 'h1', classes: 'text-align-center h-title', text: 'About Us' }),

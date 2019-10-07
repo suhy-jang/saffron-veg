@@ -1,9 +1,9 @@
-import navTap from './nav_tap';
-import about from './about';
-import menu from './menu';
-import contact from './contact';
-import layout from './layout';
-import html from './html';
+import navTap from './components/nav_tap';
+import about from './components/about';
+import menu from './components/menu';
+import contact from './components/contact';
+import layout from './components/layout';
+import html from './components/html';
 
 const main = document.querySelector('div#content');
 
